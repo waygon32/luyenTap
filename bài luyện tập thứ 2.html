@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = [
+        [2, 3, 5, 6],
+        [6, 4, 3, 2],
+        [22, 1, 99, 12],
+        [11, 5, 2, 19]
+    ]
+    let line1 = 0
+    let line2 = 0
+    for (let i = j = 0; i < arr.length; i++) {
+        line1 += arr[i][j]
+    }
+    for (let i = (arr.length - 1); i >= 0; i--) {
+        for (let j = 0; j < arr[i].length; j++) {
+            line2 +=arr[i][j]
+        }
+    }
+    alert("tổng đường chéo chính là " + line1 + " tổng đường chéo phụ là " + line2)
+</script>
